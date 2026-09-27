@@ -1,8 +1,11 @@
 package Day2;
 import java.util.Scanner;
-public class ProductDis {
+public class ProductDis 
+{
 
-	public static double calculateFinalPrice(double p) {
+	public static double calculateFinalPrice(double p) 
+	{
+		
 		double price = p;
 		double finalamt = 0;
 		if (price >= 10000)
@@ -14,9 +17,12 @@ public class ProductDis {
 		else if (price <= 2000)
 			finalamt = price;
 		return finalamt;
+		
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
+		
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter the Product ID : ");
 	int id = sc.nextInt();
@@ -27,5 +33,4 @@ public class ProductDis {
 	System.out.println("The Final Price is :"+calculateFinalPrice(p));
 
 	}
-
 }
