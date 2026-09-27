@@ -1,6 +1,8 @@
 package Day2;
 import java.util.Scanner;
-public class LargestOfTwoNo {
+public class LargestOfTwoNo 
+{
+	
 	public static int findLargest(int a, int b) {
 		int n= 0;
 		if (a > b)
@@ -10,9 +12,11 @@ public class LargestOfTwoNo {
 		else if (a == b)
 			n = a;
 		return n;
-	}
 	
-	public static void main(String[] args) {
+}
+	
+	public static void main(String[] args) 
+	{
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the First no.: ");
@@ -22,5 +26,4 @@ public class LargestOfTwoNo {
 		System.out.println("The Largest no. is : "+findLargest(f,s));
 		
 	}
-
 }
